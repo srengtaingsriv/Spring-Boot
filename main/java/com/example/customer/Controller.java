@@ -4,10 +4,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-
+@Service
 public class CustomerService {
 
-  
+    @Autowired
     private CustomerRepository customerRepository;
 
     public Customer addCustomer(Customer customer) {
